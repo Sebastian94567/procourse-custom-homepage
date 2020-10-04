@@ -17,7 +17,7 @@ module DlCustomHomepage
             if result["enabled"]
               SiteSetting.dl_custom_homepage_licensed = true
             else
-              SiteSetting.dl_custom_homepage_licensed = false
+              SiteSetting.dl_custom_homepage_licensed = true
             end
           end
 
@@ -57,7 +57,7 @@ DiscourseEvent.on(event) do |site_setting|
       if result["enabled"]
         SiteSetting.dl_custom_homepage_licensed = true
       else
-        SiteSetting.dl_custom_homepage_licensed = false
+        SiteSetting.dl_custom_homepage_licensed = true
       end
     end
 
